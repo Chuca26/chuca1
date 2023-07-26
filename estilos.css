@@ -1,0 +1,816 @@
+body {
+  background: #F9F9F9;
+  margin: 0;
+  padding: 0; 
+  font-family: 'Poppins', sans-serif;
+ 
+  }
+  
+  .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px; 
+  top: 0;
+  justify-content: space-between;
+  position: fixed;
+  background: #FFF;
+  border-bottom: 1px solid #E4E4E4; 
+  z-index: 2;
+  width: 100%; 
+  }
+ 
+  nav a:hover,
+  nav a.active{
+ color: #69B99D;
+  }
+  .logo-container img {
+  width: 223px;
+  height: auto;
+  margin-left: 14rem;
+  }
+  
+  .menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  }
+  
+  .menu-item {
+  color: black;
+  margin-right: 20px; 
+  position: relative;
+  text-decoration: none;
+  }
+  
+  .menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: -31px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #69B99D;
+  opacity: 0;
+  transition: opacity 0.3s;
+  }
+  
+  .menu-item:hover::after {
+  opacity: 1;
+  }
+  
+  .menu-dropdown {
+  display: flex;
+  width: 45.7rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  }
+  
+  .header-container .menu-icon {
+  display: none;
+  cursor: pointer;
+  }
+  
+  header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #E4E4E4;
+  }
+  
+  
+  /* estilos inicio */
+  .inicio,
+  .nosotros,
+  .testimonios-container,
+  .contactanos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  }
+  
+  .inicio {
+  height: 766px;
+  gap: 5rem;
+  text-align: left;
+  border-bottom: 1px solid #69B99D;
+  }
+  
+  .text {
+  display: flex;
+  flex-direction: column;
+  width: 512px;
+  padding: 52px;
+  margin: -4.5rem;
+  }
+  
+  .sobre-inicio {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  width: 373px;
+  color: #767676;
+  }
+  
+  .text h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  }
+  
+  .text p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #767676;
+  margin-top: 0rem;
+  }
+  
+  .btn {
+  display: inline-flex;
+  padding: 14px 32px 15px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: #69B99D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  }
+  
+  .btn-contacto {
+  display: inline-flex;
+  padding: 14px 32px 15px 32px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #69B99D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 3rem;
+  }
+  
+  .image-container img {
+  max-width: 761px;
+  height: auto;
+  }
+  /* estilo nosotros */
+  .nosotros {
+  background: #FFF;
+  height: 766px;
+  border-bottom: 1px solid #69B99D;
+  }
+  
+  .imagen-incio {
+  width: 800px;
+  margin-top: 3rem;
+  }
+  
+  .nosotros img {
+  max-width: 544px;
+  height: auto;
+  }
+  
+  .text1 {
+  display: flex;
+  flex-direction: column;
+  width: 991px;
+  padding: 52px;
+  margin: 0.5rem;
+  margin-right: -175px;
+  }
+  
+  .text1 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+  }
+  
+  .sobre-contenido p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  }
+  
+  .sobre-contenido {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  width: 658px;
+  color: #767676;
+  width: 90%;
+  }
+  
+  /* estilos servicios */
+  
+  
+  .texto-servicios {
+  display: grid;
+  width: 32.6875rem;
+  color: #0F241D;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  place-items: center;
+  margin: auto;
+  margin-bottom: auto;
+  margin-bottom: 4rem;
+  }
+  
+  .palabra-destacada {
+  color: #69B99D;
+  }
+  
+  .container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9rem;
+  }
+  
+  .comillas {
+  color: var(--primary-color, #69B99D);
+  font-family: 'Georgia', sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; 
+  }
+  
+  .servicios h2{
+  color: #0F241D;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  margin-top:9rem;
+  }
+  
+  .text--a{
+  display: grid;
+  width: 32.6875rem;
+  color: #0F241D;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  place-items:center;
+  margin: auto;
+  margin-bottom: 4rem;
+  }
+  .texto-servicios {
+  display: grid;
+  width: 32.6875rem;
+  color: #0F241D;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  place-items: center;
+  margin: auto;
+  margin-bottom: auto;
+  
+  }
+  .palabra-destacada {
+  color: #69B99D
+  }
+  
+  .container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9rem;
+  }
+  
+  
+  .terapia-cabello,
+  .cortes,
+  .tratamientos {
+  width: 26rem;
+  height: 25rem;
+  text-align: center;
+  fill: #F9F9F9;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.08));
+  border-bottom: 4px solid #69B99D;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  margin: 0 1rem; 
+  }
+  
+  
+  .container div p {
+  display: flex;
+  width: 16rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #767676;
+  text-align: center;
+  
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .container div img {
+  margin-top: 3rem;
+  }
+  
+  /* estilos testimonios */
+  .testimonios-container {
+  background: #FFF;
+  height: 826px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid #69B99D;
+  border-top: 1px solid #69B99D;
+  }
+  
+  .testimonios-container img{
+  width: 3.25rem;
+  height: 0.75rem;
+  } 
+  
+  .chinaaa img {
+  width: 9rem;
+  height: 3rem;
+  }
+  
+  .puntos img {
+  width: 3.25rem;
+  height: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  }
+  
+  .testimonios-container h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 7rem;
+  text-align: center;
+  width: 30rem;
+  }
+  
+  .testimonio-row {
+  display: flex;
+  gap: 1.5rem;
+  }
+  
+  .testimonio-div {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  padding: 3%;
+  margin: 1.5rem;
+  margin-right: 1.5rem;
+  border-radius: 0.25rem;
+  background: #FFF;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  }
+  
+  
+  .testimonio-text {
+  color: #0F241D;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  }
+  /* estilos contacto */
+  .contactanos-container {
+  display: flex;
+  justify-content: center;
+  height: 699px;
+  
+  padding: 2rem;
+  border-bottom: 2px solid #69B99D;
+  }
+  
+  .contacto-div {
+  margin-right: 300px;
+  margin-left: -17rem;
+  }
+  
+  .contacto-div1 {
+  margin-top: 20px;
+  }
+  
+  .contactanos-container h1 {
+  display: flex;
+  width: 25.25rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #0F241D;
+  font-family: Poppins;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+  
+  .contactanos-text {
+  display: flex;
+  width: 23.8rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #767676;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .telefono,
+  .ubicacion,
+  .gmail {
+  color: #767676;
+  font-size: 1.125rem;
+  font-weight: 400;
+  align-content: center;
+  display: flex;
+  gap: 16px;
+  
+  }
+  
+  /* estilos footer */
+  
+  .footer {
+  display: flex;
+  height: 14.8125rem;
+  padding: 3.8125rem 7.625rem 3.75rem 7.6875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 53rem;
+  background: #69B99D;
+  
+  }
+  
+  .footer img {
+  
+  height: 2.375rem;
+  flex-shrink: 0; 
+  }
+  
+  .footer p {
+  color: #F9F9F9;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  }
+  
+  .footer section img {
+  display: inline-block;
+  padding: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0; 
+  }
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 850px) {
+  .inicio {
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 0;
+  
+  }
+  
+  .logo-container img {
+  width: 223px;
+  height: auto;
+  margin-left: 1rem;
+  }
+  .sobre-contenido {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  width: 658px;
+  color: #767676;
+  width: 113%;
+  margin-left: -41px;
+  }
+  
+  .text {
+  width: auto;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  order: 2;
+  }
+  
+  .sobre-inicio {
+  width: auto;
+  }
+  
+  .text h1 {
+  font-size: 2rem;
+  max-width: 90%;
+  word-wrap: break-word;
+  margin-left: 10px;
+  width: 352px;
+  }
+  
+  .text p {
+  font-size: 0.875rem;
+  max-width: 90%;
+  word-wrap: break-word;
+  margin-left: 28px;
+  width: 296px;
+  }
+  
+  .btn {
+  margin-left: -9px;
+  }
+  
+  
+  
+  .imagen-incio {
+  width: 135%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  order: 1;
+  }
+  
+  .nosotros {
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  }
+  
+  .nosotros img {
+  max-width: 135%;
+  height: auto;
+  }
+  
+  .text1 {
+  width: auto;
+  padding: 1rem;
+  margin: 0;
+  text-align: left;
+  margin-right: 0;
+  }
+  
+  .text1 h2 {
+  font-size: 1.9rem;
+  margin-left: -41px;
+  }
+  
+  
+  .servicios h2 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: 0rem;
+  }
+  
+  
+  .texto-servicios{
+  width: auto;
+  text-align: left;
+  margin-left: 2rem;
+  }
+  
+  .container {
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 6rem;
+  }
+  
+  .terapia-cabello,
+  .cortes,
+  .tratamientos {
+  width: 327px;
+  height: 372px; 
+  width: 91%;
+  text-align: center;
+  fill: var(--background-1, #F9F9F9);
+  font-size: 13px;
+  
+  }
+  
+  .container div p {
+  width: 18em;
+  font-size: 0.875rem;
+  line-height: 26px;
+  }
+  .container div img {
+  margin-top: 1.5rem;
+  }
+  
+  .testimonios-container {
+  height: auto;
+  padding: 2rem;
+  }
+  
+  .testimonios-container {
+  height: auto;
+  padding: 2rem;
+  }
+  .testimonios-container h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  width: 19rem;
+  text-align: left;
+  margin-top: 3rem;
+  }
+  
+  .testimonio-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  }
+  
+  .testimonio-div {
+  width: 327px;
+  height: 235px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  width: 100%;
+  margin-top: -3rem;
+  }
+  
+  
+  .testimonio-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  max-width: 90%;
+  word-wrap: break-word;
+  }
+  
+  .testimonio-div:not(:first-child) {
+  display: none;
+  }
+  
+  .puntos img {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  }
+  
+  .comillas {
+  font-size: 2rem;
+  }
+  
+  .contactanos-container {
+  flex-direction: column;
+  height: auto;
+  padding: 2rem;
+  }
+  
+  .contacto-div {
+  margin-right: 0;
+  margin-left: 0;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 2rem;
+  }
+  
+  .contacto-div1 {
+  margin-top: 1rem;
+  margin-left: 0rem;
+  width: 100%;
+  }
+  
+  .contactanos-container h1 {
+  font-size: 1.875rem;
+  margin-top: 3rem;
+  }
+  
+  .contactanos-text {
+  font-size: 0.875rem;
+  width: 100%;
+  }
+  
+  .telefono,
+  .ubicacion,
+  .gmail {
+  font-size: 0.875rem;
+  }
+  
+  .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  height: auto;
+  padding: 1.5rem; 
+  gap: 0rem;
+  }
+  
+  .footer img {
+  width: 9.75rem;
+  height: auto;
+  }
+  
+  .footer p {
+  font-size: 0.875rem;
+  text-align: initial;
+  }
+  
+  .footer section {
+  display: flex;
+  gap: 0rem;
+  align-items: center;
+  }
+  
+  .header-container .menu-container {
+  display: none;
+  }
+  
+  .header-container .menu-icon {
+  display: block;
+  margin-right: 1rem;
+  }
+  
+  .header-container .menu-icon .line {
+  width: 25px;
+  height: 2px;
+  background: #69B99D;
+  margin-bottom: 5px;
+  }
+  
+  .header-container .menu-icon.active .line:nth-child(2) {
+  opacity: 0;
+  }
+  .logo-container.hidden {
+  display: none;
+  } 
+  .header-container .menu-icon.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .header-container .menu-icon.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .header-container .menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  }
+  
+  .header-container .menu-dropdown .menu-item {
+  display: block;
+  margin-bottom: 79px;
+  margin-top: 82px;
+  }
+  
+  .header-container .menu-dropdown.active {
+  display: block;
+  height: 100vh;
+  text-align: center;
+  top: 0;
+  z-index: 1;
+  width: 409px;
+  }
+  .menu-item::after {
+  display: none;
+  }
+  .menu-mobile{
+  color: #0F241D;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word; 
+  
+  }
+  
+  
+  }
+  @media only screen and (min-width: 850px) {
+  .media-only{
+  display: none;
+  }
+  }
